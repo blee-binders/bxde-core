@@ -4,15 +4,15 @@
 
 ####+END:
 
-####+BEGIN: bx:dblock:lsip:bash:seed-spec :types "seedBleePanelProc.sh"
+####+BEGIN: bx:bsip:bash:seed-spec :types "seedBleePanelProc.sh"
 SEED="
-*  /[dblock]/ /Seed/ :: [[file:/opt/public/osmt/bin/seedBleePanelProc.sh]] | 
+*  /[dblock]/ /Seed/ :: [[file:/bisos/core/bsip/bin/seedBleePanelProc.sh]] |
 "
 FILE="
-*  /This File/ :: /bisos/panels/bxde-core/bleePanelProc.sh 
+*  /This File/ :: /bisos/git/auth/bxRepos/blee-binders/bxde-core/bleePanelProc.sh
 "
 if [ "${loadFiles}" == "" ] ; then
-    /opt/public/osmt/bin/seedBleePanelProc.sh -l $0 "$@" 
+    /bisos/core/bsip/bin/seedBleePanelProc.sh -l $0 "$@"
     exit $?
 fi
 ####+END:
